@@ -1,0 +1,15 @@
+PODS:
+  - KIF (3.1.0):
+    - KIF/XCTest (= 3.1.0)
+  - KIF/XCTest (3.1.0)
+  - PureLayout (2.0.4)
+
+DEPENDENCIES:
+  - KIF (~> 3.0)
+  - PureLayout
+
+SPEC CHECKSUMS:
+  KIF: de7c7f4aea08179c65d963a3c5ec438ee6408e8c
+  PureLayout: ddf4fedf7e2f5984f972bbd2205dda4fc3418347
+
+COCOAPODS: 0.35.0
