@@ -1,6 +1,8 @@
 language: objective-c
 xcode_sdk: iphonesimulator8.1
 # xcode_project: HelloWorld.xcodeproj
-xcode_workspace: HelloWorld.xcworkspace # path to your xcworkspace folder
-xcode_scheme: HelloWorld
+# xcode_workspace: HelloWorld.xcworkspace # path to your xcworkspace folder
+# xcode_scheme: HelloWorld
+
+script: xcodebuild -workspace HelloWorld.xcworkspace -scheme HelloWorld -sdk iphonesimulator8.1 build test
 
