@@ -44,16 +44,6 @@
                                     <rect key="frame" x="223" y="348" width="26" height="30"/>
                                 </variation>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ID-dU-zru">
-                                <rect key="frame" x="207" y="288" width="81" height="21"/>
-                                <accessibility key="accessibilityConfiguration" label="lblPassword"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="129" y="351" width="76" height="21"/>
-                                </variation>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHg-Ji-Gvw">
                                 <rect key="frame" x="270" y="250" width="18" height="21"/>
                                 <accessibility key="accessibilityConfiguration" label="lblID"/>
@@ -61,7 +51,17 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="189" y="314" width="38" height="29"/>
+                                    <rect key="frame" x="189" y="314" width="26" height="29"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ID-dU-zru">
+                                <rect key="frame" x="207" y="288" width="81" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="lblPassword"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="129" y="351" width="86" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -71,8 +71,8 @@
                                 <exclude reference="rMV-gA-bQ4"/>
                                 <exclude reference="MLv-Q4-Fyi"/>
                                 <exclude reference="58A-xP-Zbx"/>
-                                <exclude reference="2ID-dU-zru"/>
                                 <exclude reference="rHg-Ji-Gvw"/>
+                                <exclude reference="2ID-dU-zru"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -80,15 +80,18 @@
                                 <include reference="rMV-gA-bQ4"/>
                                 <include reference="MLv-Q4-Fyi"/>
                                 <include reference="58A-xP-Zbx"/>
-                                <include reference="2ID-dU-zru"/>
                                 <include reference="rHg-Ji-Gvw"/>
+                                <include reference="2ID-dU-zru"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="btnSignIn" destination="rMV-gA-bQ4" id="YH3-EB-lNl"/>
+                        <outlet property="lblID" destination="rHg-Ji-Gvw" id="U4O-bl-64m"/>
+                        <outlet property="lblPwd" destination="2ID-dU-zru" id="ssI-3v-pTa"/>
                         <outlet property="txtID" destination="MLv-Q4-Fyi" id="NHA-l6-dLP"/>
                         <outlet property="txtPwd" destination="58A-xP-Zbx" id="8TZ-EJ-ZlL"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="SlE-99-OaA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
